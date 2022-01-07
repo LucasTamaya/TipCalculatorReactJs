@@ -129,7 +129,7 @@ header {
   background-color: #26c0ab;
   color: #00494d;
 }
-.tip-input input[type=number] {
+.tip-input input[type=tel] {
   display: none;
   width: 150px;
   font-size: 2.5rem;
@@ -140,10 +140,10 @@ header {
   cursor: pointer;
   transition: 0.2s ease;
 }
-.tip-input input[type=number]:focus {
+.tip-input input[type=tel]:focus {
   outline: 2px solid #26c0ab;
 }
-.tip-input input[type=number] + label {
+.tip-input input[type=tel] + label {
   display: block;
   padding: 10px 25px;
   text-align: center;
@@ -155,7 +155,7 @@ header {
   background-color: #f4fafa;
   color: #5e7a7d;
 }
-.tip-input input[type=number] + label:hover {
+.tip-input input[type=tel] + label:hover {
   outline: 3px solid #26c0ab;
   color: #26c0ab;
 }
@@ -247,6 +247,9 @@ header {
 }
 .recap-container .btn-reset-form button[type=reset]:hover {
   background-color: #c5e4e7;
+}
+.recap-container .btn-reset-form.empty button[type=reset] {
+  background-color: #26c0ab24;
 }
 
 @media screen and (min-width: 1440px) {

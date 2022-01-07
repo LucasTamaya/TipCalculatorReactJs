@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const RecapContainer = ({ setBill, setTip, setNbPeople, setTipAmount, setTotalAmount, tipAmount, totalAmount }) => {
 
     // Calcul du "Tip Amount/person" et du "Total/person"
-  
+
 
     const handleReset = () => {
         setBill(0);
@@ -22,7 +22,7 @@ const RecapContainer = ({ setBill, setTip, setNbPeople, setTipAmount, setTotalAm
                     <p>/ person</p>
                 </div>
                 <div className="tip-amount">
-                    {tipAmount > 0 ?<p>{tipAmount}</p> : <p>0.00</p>}
+                    {tipAmount > 0 ? <p>{tipAmount}</p> : <p>0.00</p>}
                 </div>
             </div>
 
@@ -36,9 +36,21 @@ const RecapContainer = ({ setBill, setTip, setNbPeople, setTipAmount, setTotalAm
                 </div>
             </div>
 
-            <div className="btn-reset-form">
+            {tipAmount > 0 && totalAmount > 0 ? (
+                // Si champ input non vide
+                <div className="btn-reset-form">
+                    <button type="reset" onClick={handleReset}>Reset</button>
+                </div>
+                // sinon, si champ input vide
+            ) : (
+                <div className="btn-reset-form empty">
+                    <button type="reset" onClick={handleReset}>Reset</button>
+                </div>
+                )
+            }
+            {/* <div className="btn-reset-form">
                 <button type="reset" onClick={handleReset}>Reset</button>
-            </div>
+            </div> */}
         </div>
     )
 }
