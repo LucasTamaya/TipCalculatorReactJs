@@ -139,6 +139,11 @@ header{
 
     input[type="radio"]{
         display: none;
+
+        &:checked + label{
+            background-color: $primary-clr;
+            color: $neutral-clr-one;
+        }
     }
 
     input[type="radio"] + label{
@@ -151,6 +156,7 @@ header{
             color: $neutral-clr-one;
         }
     }
+
 
     input[type="number"]{
         display: none;
@@ -212,10 +218,10 @@ header{
     input{
         @include inputNb(url("../../../public/images/icon-person.svg"));
     }
-    input.error{
-        @include inputNb(url("../../../public/images/icon-person.svg"));
-        outline: 2px solid red;
-    }
+    // input.error{
+    //     @include inputNb(url("../../../public/images/icon-person.svg"));
+    //     outline: 2px solid red;
+    // }
 }
 // End People Container
 

@@ -1,14 +1,9 @@
-import {useState} from "react";
-
-const BillContainer = () => {
-
-    const [bill, setBill] = useState(0);
+const BillContainer = ({setBill}) => {
 
     return (
         <div className="bill-container">
             <label htmlFor="bill">Bill</label>
-            <input type="number" id="bill" name="bill" placeholder="0" required onChange={(e) => setBill(parseInt(e.target.value))}/>
-            <p>{bill}</p>
+            <input type="tel" id="bill" name="bill" placeholder="0" required onChange={(e) => setBill(parseFloat(e.target.value))}/>
         </div>
     )
 }
