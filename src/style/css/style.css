@@ -298,6 +298,9 @@ header {
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "five ten fifteen" "twenty-five fifty custom";
   }
+  .tip-input input[type=tel] {
+    width: 141px;
+  }
 
   .people-container .input-error {
     font-size: 1.8rem;
