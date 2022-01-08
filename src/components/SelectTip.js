@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const SelectTip = ({setTip}) => {
 
     // Ouverture de l'input pour saisit du pourcentage custom
