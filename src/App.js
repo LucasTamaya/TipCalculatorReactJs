@@ -9,11 +9,11 @@ import { useEffect, useState } from "react";
 function App() {
 
   // Récupération des inputs
-  const [bill, setBill] = useState(0);
-  const [tip, setTip] = useState(0);
-  const [nbPeople, setNbPeople] = useState(0);
-  const [tipAmount, setTipAmount] = useState(0);
-  const [totalAmount, setTotalAmount] = useState(0);
+  const [bill, setBill] = useState(null);
+  const [tip, setTip] = useState(null);
+  const [nbPeople, setNbPeople] = useState(null);
+  const [tipAmount, setTipAmount] = useState(null);
+  const [totalAmount, setTotalAmount] = useState(null);
 
   console.log(`bill: ${bill}; tip: ${tip}; nbPeople: ${nbPeople}`)
 
@@ -45,7 +45,7 @@ function App() {
           <div className="general-input-container">
             <BillContainer setBill={setBill} />
             <SelectTip setTip={setTip} />
-            <PeopleContainer setNbPeople={setNbPeople} />
+            <PeopleContainer nbPeople={nbPeople} setNbPeople={setNbPeople} />
           </div>
           <RecapContainer setBill={setBill} setTip={setTip} setNbPeople={setNbPeople} setTipAmount={setTipAmount} setTotalAmount={setTotalAmount} tipAmount={tipAmount} totalAmount={totalAmount} />
         </form>

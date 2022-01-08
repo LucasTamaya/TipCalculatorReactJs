@@ -198,9 +198,23 @@ header {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s ease;
+  position: relative;
 }
 .people-container input:focus, .people-container input:hover {
   outline: 2px solid #26c0ab;
+}
+.people-container .nb-people-error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.people-container input.error {
+  outline: 2px solid red;
+}
+.people-container .input-error {
+  color: red;
+  font-size: 1.8rem;
+  display: inline-block;
 }
 
 .recap-container {

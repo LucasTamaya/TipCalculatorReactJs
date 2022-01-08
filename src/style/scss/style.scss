@@ -217,11 +217,22 @@ header{
 .people-container{
     input{
         @include inputNb(url("../../../public/images/icon-person.svg"));
+        position: relative;
     }
-    // input.error{
-    //     @include inputNb(url("../../../public/images/icon-person.svg"));
-    //     outline: 2px solid red;
-    // }
+
+    .nb-people-error{
+        @include flexBetween;
+    }
+
+    input.error{
+        outline: 2px solid red;
+    }
+
+    .input-error{
+        color: red;
+        font-size: 1.8rem;
+        display: inline-block;
+    }
 }
 // End People Container
 
