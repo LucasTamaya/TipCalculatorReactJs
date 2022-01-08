@@ -21,15 +21,7 @@ function App() {
     if (bill > 0 && tip > 0 && nbPeople > 0) {
       setTipAmount(parseFloat(bill * tip / 100 / nbPeople).toFixed(2));
       setTotalAmount(parseFloat((tipAmount * nbPeople + bill) / nbPeople).toFixed(2));
-
-      console.log(`bill: ${bill}; tip: ${tip}; nbPeople: ${nbPeople}`)
-
-      console.log("tip amount: ", tipAmount);
-      console.log("total amount: ", totalAmount)
     }
-    // else{
-    //   console.log("1er rendu ou réinitialisation du formulaire")
-    // }
 
   }, [bill, tip, nbPeople, tipAmount, totalAmount]);
 

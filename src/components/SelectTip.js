@@ -7,14 +7,6 @@ const SelectTip = ({setTip}) => {
         document.getElementById("label-custom").style.display = "none";
     }
 
-    // Si perte de focus sur l'input, le faire disparaitres
-    // document.getElementById("custom").onblur = () => {
-    //     document.getElementById("custom").style.display = "none";
-    //     document.getElementById("label-custom").style.display = "block";
-    // };
-
-    // const [tipPercentage, setTipPercentage] = useState(0);
-
     return (
         <div className="select-tip-container">
             <label htmlFor="select-tip">Select Tip %</label>
