@@ -96,6 +96,9 @@ header {
 .bill-container input:focus, .bill-container input:hover {
   outline: 2px solid #26c0ab;
 }
+.bill-container input::placeholder {
+  color: #7f9c9f;
+}
 
 .tip-input {
   display: grid;
@@ -203,6 +206,9 @@ header {
 .people-container input:focus, .people-container input:hover {
   outline: 2px solid #26c0ab;
 }
+.people-container input::placeholder {
+  color: #7f9c9f;
+}
 .people-container .nb-people-error {
   display: flex;
   justify-content: space-between;
@@ -213,7 +219,7 @@ header {
 }
 .people-container .input-error {
   color: red;
-  font-size: 1.8rem;
+  font-size: 1rem;
   display: inline-block;
 }
 
@@ -291,6 +297,10 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "five ten fifteen" "twenty-five fifty custom";
+  }
+
+  .people-container .input-error {
+    font-size: 1.8rem;
   }
 
   .recap-container {

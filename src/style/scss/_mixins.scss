@@ -28,6 +28,10 @@
     &:focus, &:hover{
         outline: 2px solid $primary-clr;
     }
+
+    &::placeholder{
+        color: $neutral-clr-three;
+    }
 }
 
 @mixin selectTip {

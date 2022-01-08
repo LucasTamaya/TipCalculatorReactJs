@@ -11,9 +11,9 @@ const PeopleContainer = ({ nbPeople, setNbPeople }) => {
                 // sinon, input avec message erreur et bordure rouge
             ) : (
                 <div>
-                <div class="nb-people-error">
+                <div className="nb-people-error">
                     <label htmlFor="people">Number of People</label>
-                    <p class="input-error">Can't be a zero</p>
+                    <p className="input-error">Can't be a zero</p>
                 </div>
                     <input className="error" type="tel" id="people" name="people" placeholder="0" required onChange={(e) => setNbPeople(parseFloat(e.target.value))} />
                 </div>

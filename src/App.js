@@ -47,7 +47,7 @@ function App() {
             <SelectTip setTip={setTip} />
             <PeopleContainer nbPeople={nbPeople} setNbPeople={setNbPeople} />
           </div>
-          <RecapContainer setBill={setBill} setTip={setTip} setNbPeople={setNbPeople} setTipAmount={setTipAmount} setTotalAmount={setTotalAmount} tipAmount={tipAmount} totalAmount={totalAmount} />
+          <RecapContainer tip={tip} bill={bill} nbPeople={nbPeople} setBill={setBill} setTip={setTip} setNbPeople={setNbPeople} setTipAmount={setTipAmount} setTotalAmount={setTotalAmount} tipAmount={tipAmount} totalAmount={totalAmount} />
         </form>
       </main>
 
