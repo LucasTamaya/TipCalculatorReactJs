@@ -9,7 +9,7 @@ const SelectTip = ({setTip}) => {
 
     return (
         <div className="select-tip-container">
-            <label htmlFor="select-tip">Select Tip %</label>
+            <label>Select Tip %</label>
             <div className="tip-input">
                 <div>
                     <input type="radio" id="five" name="tip-percentage" value="5" required onClick={(e) => setTip(parseInt(e.target.value))}/>

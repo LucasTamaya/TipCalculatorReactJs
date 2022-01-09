@@ -1,8 +1,6 @@
 const Header = () => {
     return (
-        <header>
-            <img src="./images/logo.svg" alt="logo splitter" />
-        </header>
+        <img src="./images/logo.svg" alt="logo splitter" />
     )
 }
 
