@@ -28,12 +28,12 @@ function App() {
   return (
     <div>
 
-      <header>
+      <header role="banner">
         <Header />
       </header>
 
-      <main>
-        <form className="container">
+      <main role="main">
+        <form className="container" role="form">
           <div className="general-input-container">
             <BillContainer setBill={setBill} />
             <SelectTip setTip={setTip} />
